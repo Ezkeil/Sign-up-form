@@ -1,0 +1,183 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font: 16px "Poppins";
+  color: white;
+  text-align: center;
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+  background-size: cover;
+  padding: 0 5%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+.content {
+  height: 100%;
+}
+.title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.description {
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+.plan {
+  background-color: #5d54a3;
+  border-radius: 10px;
+  padding: 5% 15%;
+  margin-bottom: 5%;
+}
+
+.plan > span {
+  font-weight: 600;
+}
+
+.card {
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  color: rgb(190, 189, 189);
+  font-size: 12px;
+  margin-bottom: 200px;
+}
+
+input {
+  width: 100%;
+}
+
+.inputStyle {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5%;
+  border: rgb(190, 189, 189) 1px solid;
+  border-radius: 5px;
+  margin-bottom: 10%;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #37cc8a;
+  border: none;
+  border-radius: 5px;
+  padding: 5% 2%;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.card > p {
+  padding: 0 5%;
+}
+
+.card > p > span {
+  color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url("images/bg-intro-desktop.png");
+    margin: auto;
+  }
+
+  .content {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: absolute;
+    width: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title {
+    font-size: 50px;
+  }
+  .title,
+  .description {
+    text-align: left;
+    width: 90%;
+  }
+
+  .plan {
+    margin-top: 20%;
+  }
+
+  .card {
+    margin-bottom: 10%;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
